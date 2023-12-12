@@ -1,0 +1,6 @@
+<h1>Top 5 Star Restaurants ⭐️</h1>
+<% @restaurants.each do |restaurant| %>
+  <%= render restaurant %>
+  <%= link_to "View this Restaurant", restaurant_path(restaurant) %>
+  <%= link_to "Back to All Restaurants", restaurants_path %>
+<% end %>
